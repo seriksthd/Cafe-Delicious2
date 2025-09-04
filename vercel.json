@@ -26,10 +26,5 @@
   "env": {
     "MONGO_URL": "@mongo_url",
     "DB_NAME": "@db_name"
-  },
-  "functions": {
-    "backend/server.py": {
-      "maxDuration": 10
-    }
   }
 }
