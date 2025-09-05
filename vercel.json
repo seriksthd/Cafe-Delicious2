@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/server.py"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "mongodb+srv://serik:serik080908@cluster0.0zy4x2d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "DB_NAME": "cafe-delicious"
+  }
+}
