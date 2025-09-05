@@ -1,0 +1,15 @@
+{
+  "devCommand": "python -m uvicorn backend.server:app --reload",
+  "builds": [
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/server.py"
+    }
+  ]
+}
